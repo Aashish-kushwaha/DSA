@@ -1,0 +1,14 @@
+Dynamic programming
+	* it is an optimigation over plain reccursion
+	* the idea is to reuse the solution of subproblems when there are overlapping subproblems.there are two ays to impliment to dynamic programming.
+		* memorization(top down )
+		* tabulation(bottom up)
+aaplication of dynamic programming e.g
+->bellman ford algo
+->floyd warshall algo
+->diff utility(LCS)
+->search alosed words(edit distance)
+->resource allocation
+	
+MEMOIZATION
+	

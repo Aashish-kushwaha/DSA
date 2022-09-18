@@ -1,0 +1,14 @@
+Q1. what is STACK 
+stack is data strucure where data is added and removed in LIFO(last-in-first-out)process
+
+Q2.STACK in memory
+STACK in computing architecture are the region of memory wher the data is added and 
+removed in a LIFO(last-in-first-out) process
+
+
+what is strassen's method
+Q.if list is sorted and you use linear search, what can be the benefit?
+->If the list is sorted and you are using linear search, then if the current element is larger 
+than the search element (if list is in ascending order), then we can establish that the search 
+element is not present.Though this does not improve the time complexity but it improves the 
+real time performance greatly.

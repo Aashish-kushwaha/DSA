@@ -1,0 +1,75 @@
+Write a program in C to find the length of a string without using library function
+#include <stdio.h>
+
+int main()
+{
+    int i=0;
+   char s[100];
+   scanf("%[^\n]",s);
+      while(s[i]!='\0')
+      {
+          i++;
+      }
+   printf("%s , %d",s,i);
+
+    return 0;
+}
+Write a program in C to separate the individual characters from a string
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int i=0;
+   char s[100];
+   scanf("%[^\n]",s);
+      for(i=0;i<strlen(s);i++)
+      {
+        printf("%c ",s[i]);
+      }
+
+
+    return 0;
+}
+Write a program in C to print individual characters of string in reverse order.
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int i=0;
+   char s[100];
+   scanf("%[^\n]",s);
+      for(i=strlen(s);i>=0;i--)
+      {
+        printf("%c ",s[i]);
+      }
+
+
+    return 0;
+}
+ Write a program in C to count the total number of words in a string
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int i=0,wrd=0;
+   char str[100];
+   scanf("%[^\n]",str);
+   while(str[i]!='\0')
+    {
+        /* check whether the current character is white space or new line or tab character*/
+        if(str[i]==' ' || str[i]=='\n' || str[i]=='\t')
+        {
+            wrd++;
+        }
+
+        i++;
+    }
+      printf("number of words in string:%d",wrd);
+
+
+    return 0;
+}

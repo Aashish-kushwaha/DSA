@@ -1,0 +1,50 @@
+bubble sort:
+Bubble Sort is the simplest sorting algorithm 
+that works by repeatedly swapping the adjacent 
+elements if they are in wrong order.
+worst case:O(n^2)
+avg case:O(n^2)
+best case:O(n^2)
+
+selection sort:
+The selection sort algorithm sorts an array by 
+repeatedly finding the minimum elemen from unsorted
+ part and putting it at the beginning. 
+The algorithm maintains two subarrays in a given array.
+worst case:O(n^2)
+avg case:O(n^2)
+best case:O(n^2)
+
+insertion sort:
+The array is virtually split into a sorted and an
+unsorted part. Values from the unsorted part are
+picked and placed at the correct position in the sorted part.
+worst case:O(n^2)
+avg case:O(n^2)
+best case:O(n)
+
+quick sort:
+QuickSort is a Divide and Conquer algorithm. 
+It picks an element as pivot and partitions the 
+given array around the picked pivot. 
+worst case:O(n^2)
+avg case:O(nlogn)
+best case:O(nlogn)
+
+merge sort:
+ Merge Sort is a Divide and Conquer algorithm. 
+It divides the input array into two halves, calls 
+itself for the two halves, and then merges the two 
+sorted halves
+worst case:O(nlogn)
+avg case:O(nlogn)
+best case:O(nlogn)
+
+heap sort:
+Heap sort is a comparison-based sorting technique 
+based on Binary Heap data structure. It is similar to 
+selection sort where we first find the minimum element 
+and place the minimum element at the beginning. 
+worst case:O(nlogn)
+avg case:O(nlogn)
+best case:O(nlogn)
