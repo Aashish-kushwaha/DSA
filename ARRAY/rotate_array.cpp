@@ -41,8 +41,9 @@ int main()
 
 }
 */
-// JUGGLING ALGORITHM
-
+/* 
+JUGGLING ALGORITHM: time complexity =O(n)
+*/
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -62,12 +63,17 @@ int main()
     int n=12;
     int a[12]={1,2,3,4,5,6,7,8,9,10,11,12};
     int k;
+    for( int i=0;i<12;i++)
+    {
+        cout<<a[i]<<" ";
+    }
     cout<<"enter the value of k";
     cin>>k;
+    k=k%12;
     int d,j,temp;
     d=gcd(n,k);
     int p;
-    for(int i=0;i<n;i++)
+    for(int i=0;i<d;i++)
     {
          j=i;
         temp=a[i];
@@ -82,11 +88,15 @@ int main()
 
     for(int i=0;i<12;i++)
     {
-        cout<<a[i];
+        cout<<a[i]<<" ";
 
     }
 
     
 }
+
+
+
+
 
 
