@@ -1,8 +1,9 @@
 // time complexity=O(n*k)
 // Space complexity=O(1)
-/*
+
 #include<bits/stdc++.h>
 using namespace std;
+/*
 void r_array(int a[],int k,int n)
 {
     while(k--)
@@ -41,62 +42,35 @@ int main()
 
 }
 */
-/* 
-JUGGLING ALGORITHM: time complexity =O(n)
-*/
+//second method
 
-#include<bits/stdc++.h>
-using namespace std;
-
-int gcd(int a, int b)
+void reverse(int a[],int start,int end)
 {
-    if(b==0)
+    for(int i=start,j=end;i<=(start+end)/2;i++,j--)
     {
-        return a;
-    }else
-    {
-       return gcd(b,a%b);
-    }
-}
-int main()
-{
-    int n=12;
-    int a[12]={1,2,3,4,5,6,7,8,9,10,11,12};
-    int k;
-    for( int i=0;i<12;i++)
-    {
-        cout<<a[i]<<" ";
-    }
-    cout<<"enter the value of k";
-    cin>>k;
-    k=k%12;
-    int d,j,temp;
-    d=gcd(n,k);
-    int p;
-    for(int i=0;i<d;i++)
-    {
-         j=i;
-        temp=a[i];
-        p=d;
-        while(p--)
-        {
-            a[j]=a[j+d];
-            j=j+d;
-        }
+        int temp=a[i];
+        a[i]=a[j];
         a[j]=temp;
     }
-
-    for(int i=0;i<12;i++)
-    {
-        cout<<a[i]<<" ";
-
-    }
-
-    
 }
 
+int main()
+{
+    int n=10;
+    int k;
+    int arr[n]={1,2,3,4,5,6,7,8,9,10};
+    cout<<"enter the value of k:";
+    cin>>k;
+    k=k%n;
+    //reverse first part from 0 to n-k-1
+    reverse(arr,0,n-k-1);
+    //reverse second part from n-k to n-1
+    reverse(arr,n-k,n-1);
+    //reverse the whole array 
+    reverse(arr,0,n-1);
 
-
-
-
-
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+}
