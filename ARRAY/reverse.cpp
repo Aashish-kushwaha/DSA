@@ -26,7 +26,7 @@ int main()
     }
 }
 */
-// avoiding the extra space 
+// avoiding the extra space time complexity=O(n)  space complexity=O(1)
 int main()
 {
     int n=11;
