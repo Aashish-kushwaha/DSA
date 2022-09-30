@@ -43,7 +43,7 @@ int main()
 
 
 /* efficent approach:
-here we have res as -1 anf lar as 0 now we have three dondition for new element coming in the array
+here we have res as -1 and lar as 0 now we have three condition for new element coming in the array
 -> if a[i]>a[lar]  then res=lar and lar=i
 -> if a[i]==a[lar] ignore 
 ->a[i]<a[lar] then ther are few more condition here
