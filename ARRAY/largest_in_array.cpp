@@ -5,7 +5,7 @@ find the largest element in the array
 using namespace std;
 
 
-//naive approach:time complexity:O(n) space complexity:O(1)
+//naive approach:time complexity:O(n^2) space complexity:O(1)
 int max_fun(int a[],int n)
 {
     int max=0;
