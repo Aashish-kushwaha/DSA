@@ -4,6 +4,7 @@ QUICK SORT: quick sort is based on divide and conquer algorithm. it picks an ele
 ->always pick the last element(lomuto partition)
 ->pick the random element as pivot.
 ->pick median as pivot. 
+time complexity:O(nlogn)
 */
 #include<bits/stdc++.h>
 using namespace std;
