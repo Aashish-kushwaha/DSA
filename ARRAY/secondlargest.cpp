@@ -1,8 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
-// naive approach time complexity=O(n^2) , space complexity=O(1)
 int largestn(int a[],int n)
 {
     int max=0;
@@ -42,7 +39,10 @@ int main()
 }
 
 
-/* efficent approach:
+// naive approach time complexity=O(n^2) , space complexity=O(1)
+
+
+/* efficient approach:
 here we have res as -1 and lar as 0 now we have three condition for new element coming in the array
 -> if a[i]>a[lar]  then res=lar and lar=i
 -> if a[i]==a[lar] ignore 
@@ -50,8 +50,6 @@ here we have res as -1 and lar as 0 now we have three condition for new element 
 |-> if res==-1 then res=i
 |-> if a[i]<=a[res] ignore
 |-> if(a[i]>a[res]) res=i
-
-
 */
 int s_largest(int a[],int n)
 {
@@ -65,7 +63,7 @@ int s_largest(int a[],int n)
             lar=i;
         }else if(a[i]!=a[lar])
         {
-            if(res==-1||a[i]>a[res])
+            if(a[i]>a[res])
             {
                 res=i;
             }
@@ -78,5 +76,5 @@ int main()
     int n=10;
     int arr[n]={23,44,19,374,920,283,18,231,29,10};
 
-    cout<<"second largest element found at:"<<arr[s_largest(arr,n)];
+    cout<<"second largest element is:"<<arr[s_largest(arr,n)];
 }
