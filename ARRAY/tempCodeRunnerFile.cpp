@@ -1,40 +1,33 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-int largestn(int a[],int n)
-{
-    int max=0;
-    for(int i=1;i<n;i++)
+int max_diff(int a[],int n)
     {
-        if(a[i]>a[max])
+        int ma=a[1]-a[0];
+        for(int i=0;i<n-1;i++)
         {
-            max=i;
-        }
-    }
-
-    return max;
-}
-int second_largest(int a[],int n)
-{
-    int largest=a[largestn(a,n)];
-    int res=0;
-    for(int i=0;i<n;i++)
-    {
-        if(a[i]!=largest)
-        {
-            if(a[i]>a[res])
+            for(int j=i+1;j<n;i++)
             {
-                res=i;
+                ma=max(ma,a[j]-a[i]);
+                
             }
         }
-    }
-    return res;
+     return ma;
 
-}
+    }
+
+
 int main()
 {
-    int n=10;
-    int arr[n]={23,44,19,374,920,283,18,231,29,10};
+   
+        int n;
+        cin>>n;
+        int a[n];
+        for(int i=0;i<n;i++)
+        {
+            cin>>a[i];
+        }
+        
+        cout<<"maxdiff is :"<<max_diff(a,n);
 
-    cout<<"second largest element found at:"<<arr[second_largest(arr,n)];
+    
 }
