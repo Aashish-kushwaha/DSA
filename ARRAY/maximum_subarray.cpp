@@ -2,7 +2,7 @@
 //time complexity:O(n^2)
 #include<bits/stdc++.h>
 using namespace std;
-class solution
+/*class solution
 {
     public:
     int maxsum(int a[],int n)
@@ -41,7 +41,7 @@ int main()
         cout<<"maximum subarray:"<<res;
     }
 }
-
+*/
 /*
 efficient approach:in this solution for every element we find the subarray with maximum sum which end with this element
 time complexity:O(n)
