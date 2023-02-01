@@ -51,7 +51,7 @@ OPERATION ON SINGLE_LINKED LIST:
     ->deletion at the top
     ->deletion at specific position
 3.SEARCH
-4. DISPLAY
+4.DISPLAY--done
 
 question 
 ->implementation
