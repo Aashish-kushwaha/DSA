@@ -17,7 +17,7 @@ node *insertr(node *h,int x)
     if(h==NULL)
     {
         return n;
-    };
+    }
     node *curr=h;
     while(curr->next!=NULL)
     {
