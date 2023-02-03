@@ -1,9 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
+
 struct node{
     int data;
-    node *next;
     node *prev;
+    node *next;
     node(int x)
     {
         data=x;
@@ -11,37 +12,43 @@ struct node{
         next=NULL;
     }
 };
+
 node *insertr(node *h,int x)
 {
-    node *n=new node(x);
+    node *temp=new node(x);
     if(h==NULL)
     {
-        return n;
+        return temp;
     }
+    node *c=h;
+    while(c->next!=NULL)
+    {
+        c=c->next;
+    }
+    c->next=temp;
+    return h;
+}
+node *removedl(node *h)
+{
+    
+
+    if(h==NULL||h->next==NULL)
+    {
+        delete h;
+        return NULL;
+    }
+
     node *curr=h;
-    while(curr->next!=NULL)
+    while(curr->next->next!=NULL)
     {
         curr=curr->next;
     }
-    curr->next=n;
-    n->prev=curr;
+    node *temp=NULL;
+    temp=curr->next;
+    curr->next=NULL;
+    delete temp;;
     return h;
-
 }
-node *removeh(node *head)
-{
-    if(head==NULL|| head->next==NULL)
-    {
-        delete head;
-        return NULL;
-    }
-    node *temp=head;
-    head=head->next;
-    head->prev=NULL;
-    delete temp;
-    return head;
-}
-
 void printr(node *h)
 {
     node *c=h;
@@ -58,12 +65,9 @@ int main()
     head=insertr(head,20);
     head=insertr(head,30);
     head=insertr(head,40);
-    cout<<"before removing head:";
+    cout<<"before removing last node:";
     printr(head);
-    head=removeh(head);
+    head=removedl(head);
     cout<<endl;
-    cout<<"after removing head:";
     printr(head);
-
-    
 }
