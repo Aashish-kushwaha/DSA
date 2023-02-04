@@ -102,4 +102,15 @@ OPERATION ON DOUBLY LINKED LIST
 ->Merge Two Balanced Binary Search Trees
 ->convert a binary tree into doubly linked list in spiral function
 ->convert a binary tree into doubly linked list
+
+3.Circular linked list:
+in circular linked list every element has a link to its next element in the sequence and the last element has a link to the singly linked list except that the last node points to the first node.
+
+advantages of circular linked list
+->we can traverse the whole list from any node
+->implementation of algorithms like round robin
+->we can insert at the beginning and end, by just maintaining one tail reference/ pointer
+
+disadvantages:
+-> implementation of operations become complex.
 */
