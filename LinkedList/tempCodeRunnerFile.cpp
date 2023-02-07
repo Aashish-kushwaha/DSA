@@ -1,18 +1,15 @@
-int kthnode(node *h,int k)
+node *reversel(node *head)
 // {
-//     int l=0;
+//     vector<int> rev;
+//     for(node *c=head;c!=NULL;c=c->next)
+//     {
+//         rev.push_back(c->data);
+//     }
 //     node *t=NULL;
-//     for(t=h;t!=NULL;t=t->next)
+//     for(node *t=head;t!=NULL;t=t->next)
 //     {
-//         l++;
+//         t->data=rev.back();
+//         rev.pop_back();
 //     }
-//     node *c=h;
-
-//     for(int i=1;i<l-k+1;i++)
-//     {
-//         c=c->next;
-//     }
-
-//     return c->data;
-
+//     return head;
 // }
