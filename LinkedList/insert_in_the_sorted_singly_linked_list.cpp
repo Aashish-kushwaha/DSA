@@ -26,7 +26,7 @@ node *insertsorted(node *h,int x)
     node *c=h;
     while(c->next!=NULL && c->next->data<x)
     {
-        c=c->next;
+        c=c->next
     }
 
     temp->next=c->next;

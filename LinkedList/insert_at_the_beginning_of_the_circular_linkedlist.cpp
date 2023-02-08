@@ -12,6 +12,7 @@ struct node{
 };
 
 //insert in the beginning
+//time complexity=O(n)
 node *insertr(node *head,int x)
 {
     node *temp=new node(x);
@@ -31,6 +32,8 @@ node *insertr(node *head,int x)
     return temp;
     
 }
+
+
  
 void printr(node *h)
 {
