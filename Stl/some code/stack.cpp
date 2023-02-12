@@ -1,5 +1,5 @@
-//stack is a ADT becoz we what what stack is but we dont know how it is implimented 
-// it can be im[limented using linked list , array , it follows LIFO 
+//stack is a ADT becoz we know what stack is but we dont know how it is implemented 
+// it can be implemented using linked list , array , it follows LIFO 
 #include<iostream>
 #include<stack>
 using namespace std;
@@ -29,8 +29,9 @@ int main()
     cout<<st.top()<<endl; 
 
     //pop -> it pops the top element from the stack
-   // st.pop();
+    st.pop();
     cout<<st.top()<<endl;// now top element is 4
+    
     cout<<st.size()<<endl;
     if(st.empty())
         cout<<"stack is empty"<<endl;
