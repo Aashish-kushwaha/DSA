@@ -80,6 +80,30 @@ void postorder(treenode *root)
     inorder(root->right);
     cout<<root->data<<" ";
 }
+
+
+void levelorder(treenode *root)
+{
+    if(root==NULL)
+    {
+        return;
+    }
+    queue<treenode*> q;
+    q.push(root);
+    while(!q.empty())
+    {
+        treenode *c=q.front();
+        cout<<c->data<<" ";
+        q.pop();
+
+        if(c->left!=NULL)
+        q.push(c->left);
+
+        
+        if(c->right!=NULL)
+        q.push(c->right);
+    }
+}
 int main()
 {
     treenode *root=NULL;
@@ -98,4 +122,8 @@ int main()
     cout<<endl;
     cout<<"postorder:";
     postorder(root);
+    cout<<endl;
+
+    cout<<"levelorder traversal:";
+    levelorder(root);
 }
