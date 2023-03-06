@@ -12,7 +12,7 @@ int main()
     cin>>str1;
     cout<<str1<<endl;
     
-    /*/#method 2:this method is for c-style string
+    /*//#method 2:this method is for c-style string
     string str2;
     cin.get(str2,50);
     cout<<str2<<endl;
