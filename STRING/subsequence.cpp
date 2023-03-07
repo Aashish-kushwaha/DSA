@@ -1,3 +1,5 @@
+// in this solution we match the character of string 1 and string 2 and if they match we increment both i and j by 1 but if they dont we move only in string 2 as it the bigger string and string 1 is sub sequence
+
 #include<bits/stdc++.h>
 using namespace std;
 class solution

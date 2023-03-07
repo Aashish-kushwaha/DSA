@@ -1,5 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+//1. we store string in string 2 and reverse string 2 and lastly check if they both are same.
+class solution
+{
+    public:
+    bool ispalindrome(string s)
+    {
+        string st=s;
+        reverse(st.begin(),st.end());
+        return (st==s);
+    }
+}
+
+//2. 
+
 class solution
 {
     public:
