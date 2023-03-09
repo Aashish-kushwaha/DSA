@@ -52,6 +52,7 @@ CHAINING
 data structure used for implementing chaining
 1. linked list: insert:O(n) search:O(n) delete:O(n) disadvantage: not cache friendlyness
 2. dynamic sized array(vectors in c++, arraylist in java and list in python): insert:O(n)for sorted list  search:O(n) delete:O(n) but it has one advantage that it is cache friendlyness  
-3. self balancing BST(AVL trees , red black trees): insert:O(log n) search:O(log n) delete:O(n) 
+3. self balancing BST(AVL trees , red black trees): insert:O(log n) search:O(log n) delete:O(log n) but this has one disadvantage that is non cache friendlyness
+
 
 */
