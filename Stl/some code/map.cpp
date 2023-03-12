@@ -14,7 +14,7 @@ Multimap : multimap takes duplicate value
 using namespace std;
 int main()
 {
-    map <int ,int> m;  //<int,syring>, <any data_type,data_type>
+    map <int ,int> m;  //<int,string>, <any data_type,data_type>
      //1.insert-> ut insert a new key value pair in the map
      m.insert({10,5});
      m.insert(make_pair(4,15));
@@ -57,5 +57,6 @@ cout<<endl;
     {
         cout<<it->first<<" "<<it->second<<endl;
     }
+    return 0;
 
 }
