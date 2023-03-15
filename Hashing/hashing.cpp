@@ -55,4 +55,7 @@ data structure used for implementing chaining
 3. self balancing BST(AVL trees , red black trees): insert:O(log n) search:O(log n) delete:O(log n) but this has one disadvantage that is non cache friendlyness
 
 
+
+open addressing:
+
 */
