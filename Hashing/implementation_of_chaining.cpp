@@ -36,9 +36,9 @@ list<int> *myhash;
         for(int i=0;i<bucket;i++)
         {
             cout<<i;
-            for(auto it=myhash[i].begin();it!=myhash[i].end();it++)
+            for(auto &it:myhash)
             {
-                cout<<"-->"<<*it;
+                cout<<"-->"<<it;
             }
             // i++;
             cout<<endl;
