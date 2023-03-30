@@ -1,7 +1,7 @@
 /* map is a associative containers that store elements in mapped fashion 
-each element is has a key value and a maped value.  we cannot repeat key but can override value
+each element is has a key value and a mapped value.  we cannot repeat key but can override value
 
-    -->>ordered:-> based on balanced Binary tree of keys,keys are in sorted order o(logn)
+    -->>ordered:-> based on balanced Binary tree of keys,keys are in sorted order o(log n)
     |
 map--
     |
@@ -32,7 +32,7 @@ cout<<endl;
          cout<<it->first<<" "<<it->second<<endl;
      }
 
-     //2.find-> searchess for given value and retuns the iterator
+     //2.find-> searches for given value and retuns the iterator
      if(m.find(10)!=m.end())
      {
          cout<<m.find(10)->second<<endl;// it can also be replaced by 
